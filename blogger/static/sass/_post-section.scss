@@ -1,0 +1,50 @@
+
+.post-body{
+    background-color: $misty-rose;
+    box-shadow: 0 0 10px #0000007a;
+    border-radius: 15px;
+    padding: 2em;
+    width: 90vw;
+    margin: 1em auto;
+    position: relative;
+
+
+    .readmore-button{ 
+        text-decoration: none;
+        color: $misty-rose;
+        padding: 1em;
+        margin: 2em 0;
+        background-color: $black-coffee;
+        border-radius: 0.2em;
+    }
+
+    .tools-container{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .tool-element{
+            text-decoration: none;
+            padding: 0.1em;
+            font-size: 2em;
+            color: rgba($black-coffee, 60%);
+            border-radius: 999px;
+            translate: 0.5s;
+
+            &:hover{
+                color: $magenta-dye;
+                translate: 0.5s;
+            }
+        }
+
+    }
+
+
+
+
+
+}

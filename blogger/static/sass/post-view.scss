@@ -1,0 +1,42 @@
+@import 'colors';
+
+.post-form{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 2em;
+    background-color: $misty-rose;
+    margin: 10px auto;
+    width: 90vw;
+    border-radius: 10px;
+
+    textarea,
+    input{
+        padding: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .form-submit{
+        width: 30%;
+        border: none;
+        border-radius: 15px;
+        background-color: $magenta-dye;
+        padding: 1em;
+        margin: 0 auto;
+    }
+}
+
+p{
+    color: $black-coffee;
+}
+
+
+
+.post-container{
+    padding: 2em;
+    border-radius: 15px;
+    background-color: $misty-rose;
+    color: $black-coffee;
+    margin: 0 auto;
+    width: 90vw;
+}

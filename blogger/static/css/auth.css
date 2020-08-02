@@ -1,0 +1,192 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  background-color: #A2AD91;
+  height: 100vh;
+  width: 100vw;
+}
+
+.signin-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px #000000ad;
+          box-shadow: 0 0 10px #000000ad;
+  color: #3A2D32;
+  padding: 2em;
+}
+
+.signin-form .required:before {
+  content: '*';
+  color: red;
+}
+
+.signin-form p {
+  width: 100%;
+  text-align: left;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.signin-form h2 {
+  color: #3A2D32;
+  margin-top: 1em;
+}
+
+.signin-form input {
+  width: 20em;
+  margin-top: 1em;
+  padding: 1em;
+  border: 0.11em solid #3A2D32;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signin-form input:focus {
+  outline-color: #D30C7B;
+  color: #D30C7B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signin-form #submit_btn {
+  font-weight: bold;
+  background-color: #3A2D32;
+  border: none;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signin-form #submit_btn:hover {
+  background-color: #D30C7B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signin-form a {
+  color: #3A2D32;
+  padding: 1em;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signin-form a:hover {
+  color: #D30C7B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px #000000ad;
+          box-shadow: 0 0 10px #000000ad;
+  color: #3A2D32;
+  padding: 2em;
+}
+
+.signup-form p {
+  width: 100%;
+  text-align: left;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.signup-form .required:before {
+  content: '*';
+  color: red;
+}
+
+.signup-form h2 {
+  color: #3A2D32;
+  margin-top: 1em;
+}
+
+.signup-form input {
+  width: 20em;
+  margin-top: 1em;
+  padding: 1em;
+  border: 0.11em solid #3A2D32;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-form input:focus {
+  outline-color: #D30C7B;
+  color: #D30C7B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-form #submit_btn {
+  font-weight: bold;
+  background-color: #3A2D32;
+  border: none;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-form #submit_btn:hover {
+  background-color: #D30C7B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-form #submit_btn:disabled {
+  display: none;
+}
+
+.signup-form a {
+  color: #3A2D32;
+  padding: 1em;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-form a:hover {
+  color: #D30C7B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=auth.css.map */

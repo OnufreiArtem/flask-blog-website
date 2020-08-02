@@ -1,0 +1,183 @@
+@mixin items-in-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin form-base {
+    @include items-in-center();
+    flex-direction: column;
+}
+
+$magenta-dye : #D30C7B;
+$misty-rose  : #FFE3DC;
+$baby-pink   : #DBB4AD;
+$laurel-green: #A2AD91;
+$black-coffee: #3A2D32;
+
+$back-color: $laurel-green;
+$form-back-color: white;
+$title-color: $black-coffee;
+$text-color: $black-coffee;
+$button-color:$black-coffee;
+$button-color-hover: $magenta-dye;
+$link-color: $black-coffee;
+$link-color-hover: $magenta-dye; 
+
+$trans-dur: 0.5s;
+
+*{
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body{
+    @include items-in-center();
+    margin: 0;
+    background-color: $back-color;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signin-form{
+    @include form-base();
+    background-color: $form-back-color;
+    box-shadow: 0 0 10px #000000ad;
+    color: $text-color;
+    padding: 2em;
+
+
+    .required{
+        &:before{
+            content: '*';
+            color:red;
+        }
+    }
+
+    p{
+        width:100%;
+        text-align: left;
+        font-size: 0.9em;
+        margin: 0;
+    }
+
+    h2{
+        color: $title-color;
+        margin-top: 1em;
+    }
+
+    input{
+        width: 20em;
+        margin-top: 1em;
+        padding: 1em;
+        border: 0.11em solid $black-coffee;
+        transition: $trans-dur;
+
+        &:focus{
+            outline-color: $link-color-hover;
+            color: $link-color-hover;
+            transition: $trans-dur;
+        }
+    
+    }
+
+    #submit_btn{
+        font-weight: bold;
+        background-color: $button-color;
+        border: none;
+        color: $form-back-color;
+        transition: $trans-dur;
+
+        &:hover{
+            background-color: $button-color-hover;    
+            transition: $trans-dur;
+        }
+    }
+
+    a{
+        color: $link-color;
+        padding: 1em;
+        text-align: center;
+        transition: $trans-dur;
+
+        &:hover{
+            color: $link-color-hover;
+            transition: $trans-dur;
+            
+        }
+    }
+
+}
+
+
+.signup-form{
+    @include form-base();
+    background-color: $form-back-color;
+    box-shadow: 0 0 10px #000000ad;
+    color: $text-color;
+    padding: 2em;
+
+    p{
+        width:100%;
+        text-align: left;
+        font-size: 0.9em;
+        margin: 0;
+    }
+
+    .required{
+        &:before{
+            content: '*';
+            color: red;
+        }
+    }
+
+    h2{
+        color: $title-color;
+        margin-top: 1em;
+    }
+
+    input{
+        width: 20em;
+        margin-top: 1em;
+        padding: 1em;
+        border: 0.11em solid $black-coffee;
+        transition: $trans-dur;
+
+        &:focus{
+            outline-color: $link-color-hover;
+            color: $link-color-hover;
+            transition: $trans-dur;
+        }
+    
+    }
+
+    #submit_btn{
+        font-weight: bold;
+        background-color: $button-color;
+        border: none;
+        color: $form-back-color;
+        transition: $trans-dur;
+
+        &:hover{
+            background-color: $button-color-hover;    
+            transition: $trans-dur;
+        }
+
+        &:disabled{
+            display: none;
+        }
+    }
+
+    a{
+        color: $link-color;
+        padding: 1em;
+        text-align: center;
+        transition: $trans-dur;
+
+        &:hover{
+            color: $link-color-hover;
+            transition: $trans-dur;
+            
+        }
+    }
+}

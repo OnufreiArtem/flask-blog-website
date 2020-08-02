@@ -1,0 +1,46 @@
+.post-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  background-color: #FFE3DC;
+  margin: 10px auto;
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.post-form textarea,
+.post-form input {
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.post-form .form-submit {
+  width: 30%;
+  border: none;
+  border-radius: 15px;
+  background-color: #D30C7B;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+p {
+  color: #3A2D32;
+}
+
+.post-container {
+  padding: 2em;
+  border-radius: 15px;
+  background-color: #FFE3DC;
+  color: #3A2D32;
+  margin: 0 auto;
+  width: 90vw;
+}
+/*# sourceMappingURL=post-view.css.map */

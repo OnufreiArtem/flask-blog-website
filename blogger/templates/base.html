@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block imports %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title> 
+</head>
+<body>
+    <div class="header">
+        <a id="logo" href="/">You<span id="logo-secondary">Blog</span></a>
+
+        <div class="additional-btns">
+            {% block header_elements %}
+
+            {% endblock %}
+            <div id="user-container" onclick="showUrl('/signin')">
+                <span class="user-name">{% if user == None %}Guest{% else %}{{ user['name'] }}{% endif %}</span>
+                <img src="{% if user == None %}https://toppng.com/uploads/preview/person-vector-11551054765wbvzeoxz2c.png{% else %}{{ user['user_image'] }}{% endif %}" alt="user-image" class="user-image">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    {% block body %}
+
+    {% endblock %}
+
+    <footer class="footer">
+        <p>Developed by Artem Onufrei ©</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

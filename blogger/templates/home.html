@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+
+{% block imports %}
+    <!-- link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/post-section.css') }}"> -->
+{% endblock %}
+
+{% block title %} HomePage {% endblock %}
+
+
+{% block header_elements %}
+    {% if user != None %}
+        <a class="add-post" href="/addPost">Add Post</a>
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    <p class="list-title">Last Posts</p>
+
+    {% if posts|length <= 0 %}
+        <h3>No new posts now</h3>
+    {% endif %}
+
+    {% for post in posts %}
+        <section class="post-body">
+            <h2 class="post-title">{{post.title}}</h2>
+            <p class="post-author">Posted by {{post.author}}</p>
+            <hr>
+            <p style="white-space: pre-line" class="post-content">{{post.content}}</p>
+            
+            <a class="readmore-button" href="/posts/{{post.id}}">ReadMore >></a>
+            
+            {% if user != None and post.author_id == user['id'] %}
+                <div class="tools-container">
+                    <a href="/edit/{{post.id}}" class="tool-element">&#10000</a>
+                    <a href="/delete/{{post.id}}" class="tool-element">&#10006</a>    
+                </div>    
+                {% endif %}
+
+            <p class='post-date'>{{post.date_of_post}}</p>
+        </section>
+    {% endfor %}
+{% endblock %}

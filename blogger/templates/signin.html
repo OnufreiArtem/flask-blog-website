@@ -1,0 +1,18 @@
+{% extends "auth_base.html" %}
+
+{% block title %} Sign in {% endblock %}
+
+{% block form_container %}
+
+    <form class="signin-form" action="/signin" method='POST'>
+        
+        <h2>SIGN IN</h2>
+        <p>Please, fill the form above</p>
+        <input type="text" name="username" id="username" placeholder="USERNAME">
+        <input type="password" name="password" id="password" placeholder="PASSWORD">
+        {% if failed==True %} <p style='color:red; text-align: center;' id="error-message">Incorrect username or password</p> {% endif %}
+        <input type="submit" value="LOGIN" id="submit_btn">   
+        <a href="/signup">Still don't have account? <br> Press here to create one.</a> 
+    </form>
+
+{% endblock %}

@@ -1,0 +1,201 @@
+.post-body {
+  background-color: #FFE3DC;
+  -webkit-box-shadow: 0 0 10px #0000007a;
+          box-shadow: 0 0 10px #0000007a;
+  border-radius: 15px;
+  padding: 2em;
+  width: 90vw;
+  margin: 1em auto;
+  position: relative;
+}
+
+.post-body .readmore-button {
+  text-decoration: none;
+  color: #FFE3DC;
+  padding: 1em;
+  margin: 2em 0;
+  background-color: #3A2D32;
+  border-radius: 0.2em;
+}
+
+.post-body .tools-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post-body .tools-container .tool-element {
+  text-decoration: none;
+  padding: 0.1em;
+  font-size: 2em;
+  color: #3a2d32;
+  border-radius: 999px;
+  translate: 0.5s;
+}
+
+.post-body .tools-container .tool-element:hover {
+  color: #D30C7B;
+  translate: 0.5s;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+body {
+  background-color: #A2AD91;
+  margin: 0;
+  height: 100vh;
+}
+
+.list-title {
+  margin: 0 auto;
+  font-size: 1em;
+  width: 90vw;
+  font-weight: bold;
+  border-radius: 2em;
+  color: #FFE3DC;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+  background-color: #3A2D32;
+  padding: 1em;
+}
+
+.header {
+  width: 100%;
+  background-color: #3A2D32;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8em;
+  margin-bottom: 1em;
+}
+
+.header #logo {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.header #logo #logo-secondary {
+  color: #DBB4AD;
+}
+
+.header #user-container {
+  background-color: #0000008a;
+  border-radius: 5px;
+  border: 1px solid #00000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.header #user-container .user-name {
+  color: #DBB4AD;
+  font-size: 1.2em;
+  margin-right: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header #user-container .user-image {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.header #user-container:hover {
+  border: 1px solid #DBB4AD;
+  color: #D30C7B;
+  -webkit-box-shadow: 0 0 10px #ffffffc9;
+          box-shadow: 0 0 10px #ffffffc9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header #user-container:hover .user-name {
+  color: #FFE3DC;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.additional-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.additional-btns a {
+  margin-right: 0.5em;
+}
+
+.add-post {
+  text-decoration: none;
+  background-color: #D30C7B;
+  color: #FFE3DC;
+  font-size: 1.2em;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 10px #D30C7B;
+          box-shadow: 0 0 10px #D30C7B;
+  transition: 0.2s;
+}
+
+.add-post:hover {
+  color: #3A2D32;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer {
+  background-color: #3A2D32;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 0.1em;
+  width: 100%;
+  color: #FFE3DC;
+}
+
+.footer p {
+  margin-left: 2em;
+}
+/*# sourceMappingURL=style.css.map */

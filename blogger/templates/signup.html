@@ -1,0 +1,28 @@
+{% extends "auth_base.html" %}
+
+{% block title %} Sign up {% endblock %}
+
+{% block form_container %}
+
+    <form class="signup-form" action="/signup" method='POST'>
+        
+        <h2>SIGN UP</h2>
+        <p>Please, fill the form above</p>
+        <input type="text" name="name" class="required" placeholder="NAME">
+        <input type="text" name="surname" class="required" placeholder="SURNAME">
+        <br>
+        <p id='username_message' style="color:red">{% if username_failed == True %}This username is already used by other person{% endif %}</p>
+        <input type="text" name="username" class="required" oninput='cleanmessage()' placeholder="USERNAME">
+        <br>
+        <p id='password_message'>{% if password_failed == True %}Password must contain less than 8 symbols{% endif %}</p>
+        <input type="password" id="main_pass" name="password" oninput='checkpasswords()' class="required" placeholder="PASSWORD">
+        <input type="password" id="conf_pass" name="password_confirm" oninput='checkpasswords()' class="required" placeholder="CONFIRM PASSWORD">
+        
+        <input type="submit" value="SIGN UP" id="submit_btn">   
+        <a href="/signin">Already have account? <br> Press here to login.</a> 
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/signup_logic.js') }}"></script> 
+
+{% endblock %}
